@@ -1,5 +1,8 @@
 import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
+
+import './navigation.scss';
 
 const Navigation = () => {
     return (
@@ -7,12 +10,12 @@ const Navigation = () => {
             <div className='navigation'>
                 <Link className='navigation-logo-container' to='/'>
                     <div>
-                        Logo
+                        <Logo className='logo'/>
                     </div>
                 </Link>
-                <div className='navigation-link-container'>
-                    <Link to='/shop'>
-                        Shop
+                <div className='navigation-links-container'>
+                    <Link className='nav-link' to='/shop'>
+                        SHOP
                     </Link>
                 </div>
             </div>
