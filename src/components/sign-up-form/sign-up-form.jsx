@@ -18,8 +18,6 @@ const SignUpForm = () => {
     const [formField, setFormField] = useState(defaultFormFields);
     const { displayName, email, password, confirmPassword } = formField;
 
-    console.log(formField)
-
     const handleChange = (event) => {
         const { name, value } = event.target;
 
@@ -87,7 +85,7 @@ const SignUpForm = () => {
                     onChange={handleChange} 
                 />
 
-                <Button buttonTtype='default' type='submit'>Sign Up</Button>
+                <Button buttonType='default' type='submit'>Sign Up</Button>
             </form>
         </div>
     )
