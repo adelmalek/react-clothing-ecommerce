@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './sign-in-form.scss';
 
 import FormInput from '../form-input/form-input';
-import Button from '../button/button';
+import Button, { BUTTON_TYPE_CLASSES } from '../button/button';
 
 import { 
     signInWithGooglePopup, 
@@ -74,8 +74,8 @@ const SignInForm = () => {
                 />
 
                 <div className='buttons-container'>
-                    <Button buttonType='default' type='submit'>Sign In</Button>
-                    <Button buttonType='google-sign-in' type='button' onClick={signInWithGoogle}>
+                    <Button buttonType={BUTTON_TYPE_CLASSES.base} type='submit'>Sign In</Button>
+                    <Button buttonType={BUTTON_TYPE_CLASSES.google} type='button' onClick={signInWithGoogle}>
                         Google Sign In
                     </Button>
                 </div>

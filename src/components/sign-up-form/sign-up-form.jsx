@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './sign-up-form.scss';
 
 import FormInput from '../form-input/form-input';
-import Button from '../button/button';
+import Button, { BUTTON_TYPE_CLASSES} from '../button/button';
 
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase';
 
@@ -85,7 +85,7 @@ const SignUpForm = () => {
                     onChange={handleChange} 
                 />
 
-                <Button buttonType='default' type='submit'>Sign Up</Button>
+                <Button buttonType={BUTTON_TYPE_CLASSES.base} type='submit'>Sign Up</Button>
             </form>
         </div>
     )
