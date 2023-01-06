@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import './sign-in-form.scss';
+import { SignInContainer, HaveAnAccount, ButtonContainer } from './sign-in-form.styles';
 
 import FormInput from '../form-input/form-input';
 import Button, { BUTTON_TYPE_CLASSES } from '../button/button';
@@ -50,8 +50,8 @@ const SignInForm = () => {
     }
 
     return (
-        <div className='sign-in-container'>
-            <h2>Already have an account?</h2>
+        <SignInContainer>
+            <HaveAnAccount>Already have an account?</HaveAnAccount>
             <span>Sign in with your email and password</span>
             <form onSubmit={handleSubmit}>
 
@@ -73,14 +73,14 @@ const SignInForm = () => {
                     onChange={handleChange} 
                 />
 
-                <div className='buttons-container'>
+                <ButtonContainer>
                     <Button buttonType={BUTTON_TYPE_CLASSES.base} type='submit'>Sign In</Button>
                     <Button buttonType={BUTTON_TYPE_CLASSES.google} type='button' onClick={signInWithGoogle}>
                         Google Sign In
                     </Button>
-                </div>
+                </ButtonContainer>
             </form>
-        </div>
+        </SignInContainer>
     )
 }
 

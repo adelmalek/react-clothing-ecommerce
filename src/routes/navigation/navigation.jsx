@@ -22,7 +22,7 @@ const Navigation = () => {
             <NavigationContainer>
                 <LogoContainer to='/'>
                     <div>
-                        <Logo className='logo'/>
+                        <LogoPic as={Logo}/>
                     </div>
                 </LogoContainer>
                 <NavLinks>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import './sign-up-form.scss';
+import { SignUpContainer, HaveNotAnAccount } from './sign-up-form.styles';
 
 import FormInput from '../form-input/form-input';
 import Button, { BUTTON_TYPE_CLASSES} from '../button/button';
@@ -45,8 +45,8 @@ const SignUpForm = () => {
     }
 
     return (
-        <div className='sign-up-container'>
-            <h2>Don't have an account?</h2>
+        <SignUpContainer>
+            <HaveNotAnAccount>Don't have an account?</HaveNotAnAccount>
             <span>Sign up with your email and password</span>
             <form onSubmit={handleSubmit}>
                 <FormInput
@@ -87,7 +87,7 @@ const SignUpForm = () => {
 
                 <Button buttonType={BUTTON_TYPE_CLASSES.base} type='submit'>Sign Up</Button>
             </form>
-        </div>
+        </SignUpContainer>
     )
 }
 
