@@ -19,7 +19,7 @@ const userReducer = (state, action) => {
             return {
                 ...state,
                 currentUser: payload
-            }
+            };
         default:
             throw new Error(`Unhandled type of ${type} in userReducer`);
     }
