@@ -1,11 +1,25 @@
 import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
 import CategoriesPreview from '../categories-preview/categories-preview';
 import Category from '../category/category';
 
-import { ProductsContainer } from './shop.styles';
+import { getCategoriesAndDocuments } from '../../utils/firebase/firebase';
+import { setCategoriesMap } from '../../store/categories/category.actions';
 
 const Shop = () => {
+    const dispatch = useDispatch();
+    
+    const getCategoriesMap = async () => {
+        const categoryMap = await getCategoriesAndDocuments();
+        dispatch(setCategoriesMap(categoryMap));
+    };
+
+    useEffect( () => {
+        getCategoriesMap()
+    }, []);
+
     return (
         <Routes>
             <Route index element={<CategoriesPreview />} />
