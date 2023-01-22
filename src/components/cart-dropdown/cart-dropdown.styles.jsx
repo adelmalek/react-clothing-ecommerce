@@ -23,7 +23,7 @@ export const CartItems = styled.div`
 
 export const Btn = styled.button`
   margin-top: auto;
-  font-size: 11px;
+  font-size: 10px;
 `;
 
 export const EmptyMessage = styled.span`
