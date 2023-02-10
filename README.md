@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Complete React Developer ZTM Course
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+- E-commerce app with Redux, Hooks, GraphQL, Stripe, Firebase
 
-In the project directory, you can run:
 
-### `npm start`
+- Styles:
+    - Sass (CSS pre-processor)
+    - styled-components (React-specific CSS-in-JS styling solution)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React Hooks:
+    - useState (state variables)
+    - useEffect (to perform side effects: fetching data, directly updating the DOM, and timers)
+    - useContext (pass data or state through the component tree)
+    - useReducer (similar to useState, e.g. an object containing keys that we want to update independently)
+  
 
-### `npm test`
+- React Router
+    - Routes, Route
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+- Redux
+    - Redux is simply a store to store the state of the variables in your app. Redux creates a process and procedures to interact with the store so that components will not just update or read the store randomly.
+    - Persist (even after refreshing the browser, the site state will still be preserved)
+    - Logger (logging actions and state makes it easy to understand bugs and user-reported issues)
+    - Thunk (middleware, allows to dispatch actions manually)
+    - Saga (it has access to the full redux application state and it can dispatch redux actions as well)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Firebase
+    - Firebase is a Backend-as-a-Service.
+    - Firebase is categorized as a NoSQL database program, which stores data in JSON-like documents.
+    - (Firebase Authentication - It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+- Netlify
+    - A platform that offers cloud hosting and serverless backend services for static websites.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Stripe
+    - Global technology company that builds and provides financial infrastructure.
+    - Receiving and managing various payment transactions.
+    - Allows to pay with credit cards and digital wallets (MasterCard, VISA, American Express, Apple Pay,Google Pay)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
