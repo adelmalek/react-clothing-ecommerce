@@ -10,13 +10,15 @@ export type FetchCategoriesSuccess =
 export type FetchCategoriesFailed = 
     ActionWithPayload<CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_FAILED, Error>;
 
+
 export type CategoryAction = FetchCategoriesStart | FetchCategoriesSuccess | FetchCategoriesFailed;
+
 
 export const fetchCategoriesStart = (): FetchCategoriesStart => {
     return createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START)
 };
 
-export const fetchCategoriesSuccess = (categoriesArray: Category[]): FetchCategoriesSuccess=> {
+export const fetchCategoriesSuccess = (categoriesArray: Category[]): FetchCategoriesSuccess => {
     return createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_SUCCESS, categoriesArray)
 };
 
