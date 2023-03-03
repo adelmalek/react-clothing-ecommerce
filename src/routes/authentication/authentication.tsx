@@ -10,6 +10,6 @@ const Authentication = () => {
             <SignUpForm />
         </AuthenticationContainer>
     )
-}
+};
 
 export default Authentication;

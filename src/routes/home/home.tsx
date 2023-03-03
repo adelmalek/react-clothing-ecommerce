@@ -9,6 +9,6 @@ const Home = () => {
         <Directory />
     </div>
   )
-}
+};
 
 export default Home;
