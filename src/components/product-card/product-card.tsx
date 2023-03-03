@@ -13,7 +13,15 @@ import {
 
 import Button, { BUTTON_TYPE_CLASSES } from '../button/button';
 
-const ProductCard = ({ product }) => {
+import { FC } from 'react';
+
+import { CategoryItem } from '../../store/categories/category.types';
+
+type ProductCardProps = {
+    product: CategoryItem;
+};
+
+const ProductCard: FC<ProductCardProps> = ({ product }) => {
     const { name, imageUrl, price } = product;
     
     const dispatch = useDispatch();

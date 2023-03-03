@@ -7,7 +7,15 @@ import {
   Title, 
   ShopNow } from './directory-item.styles';
 
-const DirectoryItem = ({category}) => {
+import { FC } from 'react';
+
+import { DirectoryCategory } from '../directory/directory';
+
+type DirectoryItemProps = { 
+  category: DirectoryCategory;
+};
+
+const DirectoryItem: FC<DirectoryItemProps> = ({category}) => {
 
     const { id, title, imageUrl, route} = category;
     const navigate = useNavigate();
@@ -24,6 +32,6 @@ const DirectoryItem = ({category}) => {
         </DirectoryItemContainer>
     )
 
-}
+};
 
 export default DirectoryItem;

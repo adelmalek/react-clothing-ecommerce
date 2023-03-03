@@ -1,6 +1,15 @@
 import DirectoryItem from '../directory-item/directory-item';
 import { DirectoryContainer } from './directory.styles';
 
+import { Key } from 'react';
+
+export type DirectoryCategory = {
+  id: Key;
+  title: string;
+  imageUrl: string;
+  route: string;
+};
+
 const categories = [
     {
       id: 1,
@@ -43,6 +52,6 @@ const Directory = () => {
             )}
         </DirectoryContainer>
     )
-}
+};
 
 export default Directory;

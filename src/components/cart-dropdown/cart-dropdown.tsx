@@ -3,10 +3,11 @@ import { useSelector } from 'react-redux';
 
 import { CartDropDownContainer, CartItems, Btn, EmptyMessage } from './cart-dropdown.styles';
 
-import Button from '../button/button';
+import Button, { BUTTON_TYPE_CLASSES} from '../button/button';
 import CartItem from '../cart-item/cart-item';
 
 import { selectCartItems } from '../../store/cart/cart.selector';
+
 
 const CartDropdown = () => {
     const cartItems = useSelector(selectCartItems);
@@ -24,7 +25,7 @@ const CartDropdown = () => {
                 )
             }
             </CartItems>
-            <Btn as={Button} buttonType='base' onClick={goToCheckOutHandler}>Go to checkout</Btn>
+            <Btn as={Button} buttonType={BUTTON_TYPE_CLASSES.base} onClick={goToCheckOutHandler}>Go to checkout</Btn>
         </CartDropDownContainer>
     )
 };
