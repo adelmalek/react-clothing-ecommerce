@@ -44,4 +44,6 @@
     - Allows to pay with credit cards and digital wallets (MasterCard, VISA, American Express, Apple Pay,Google Pay)
 
 
-  
+- TypeScript
+  - TypeScript is an object-oriented programming language developed by Microsoft Corporation, whereas JavaScript is the programming language for the web.
+  - TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.
