@@ -1,7 +1,7 @@
 # Complete React Developer ZTM Course
 
 
-- E-commerce app with Redux, Hooks, GraphQL, Stripe, Firebase
+- E-commerce app with Redux, Hooks, Stripe, Firebase
 
 
 - Styles:
