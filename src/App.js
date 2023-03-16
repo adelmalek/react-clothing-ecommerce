@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import Spinner from './components/spinner/spinner';
 import { checkUserSession } from './store/user/user.action';
+import { GlobalStyle } from './global.styles';
 
 /*
 import Navigation from './routes/navigation/navigation';
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <Suspense fallback={<Spinner />}>
+      <GlobalStyle/>
       <Routes>
         <Route path='/' element={<Navigation />}>
           <Route index element={<Home />} />
