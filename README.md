@@ -49,4 +49,11 @@
   - TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.
 
 
+- PWA
+  - Progressive web apps are much simpler to develop and use than other web or native solutions. For instance, since they can be installed from the browser, there is no need to submit them to the App Store or Google Play.
+  - They’re compatible with all devices on all operating systems if accessed through a standards-compliant browser.
+  - If the network connection is unstable or absent, PWAs use cached data from previous sessions to ensure perfect and uninterrupted performance. The users will be able to access your app from basically anywhere.
+  - Similar to a native mobile app, a user can open the PWA by clicking the icon on the home screen.
+
+
 - Link: https://bespoke-stroopwafel-630105.netlify.app/
