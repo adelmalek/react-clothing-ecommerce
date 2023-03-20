@@ -4,6 +4,7 @@ export const SignInContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 380px;
+    margin-bottom: 60px;
 `;
 
 export const HaveAnAccount = styled.h2`
